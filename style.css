@@ -51,6 +51,28 @@ footer a:hover, a:active {
   font-size: 14px;
 }
 
+.logo {
+  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.5em 0.2em 0.2em 0.5em;
+}
+
+.logo a {
+  text-decoration: none;
+  padding-left: 0.7em;
+}
+
+.logo img {
+  max-width: 42px !important;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.logo span {
+  vertical-align: middle;
+  padding-left: 0.5em;
+}
+
 @media only screen and (max-width: 768px) {
   .footer-text {
     font-size: 14px;
@@ -62,5 +84,13 @@ footer a:hover, a:active {
 
   .made-by {
     font-size: 10px;
+  }
+
+  .logo {
+    font-size: 14px;
+  }
+
+  .logo img {
+    max-width: 32px !important;
   }
 }

@@ -52,23 +52,29 @@
     </script>
     <script>
       var URL = 'https://raw.githubusercontent.com/jonatasbaldin/python-community-map/master/communities.yaml'
-
+    
       fetch(URL).then(function(response) {
         response.text().then(function(data) { initMap(data) })
       })
 
       function infoWindowContent(strings) {
-        var name = strings[0]
-        var url = strings[1]
+        var [name, url, logo] = strings
+
+        if (logo === undefined) {
+          logo = 'https://github.com/jonatasbaldin/python-community-map/raw/master/logo.png'
+        }
 
         var content = `
           <div id="content">
-            <div id="siteNotice"></div>
+            <div id="siteNotice" />
             <div id="bodyContent">
-              <p><a target="_blank" href="${url}">${name}</a></p>
+              <div class="logo">
+                <img src="${logo}" alt="${name} logo">
+                <a href="${url}" target="_blank">${name}</a>
+              </div>
             </div>
           </div>
-        `
+          `
 
         return content
       }
@@ -77,11 +83,11 @@
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 2,
           center: {lat: -0, lng: -18}
-        });
+        })
 
         var infowindow = new google.maps.InfoWindow({
           content: '',
-        });
+        })
 
         markers = YAML.parse(communities)
 
@@ -93,7 +99,11 @@
           })
 
           item['marker'].addListener('click', function(){
-            infowindow.setContent(infoWindowContent([item.name, item.url]))
+            infowindow.setContent(infoWindowContent([
+              item.name, 
+              item.url, 
+              item.logo,
+            ]))
             infowindow.open(map, item['marker'])
           })
 
