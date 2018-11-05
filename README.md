@@ -16,7 +16,10 @@ Add your community information to the `communities.yaml` file, with the followin
   lat: -21.176630
   lng: -47.820840
   url: https://www.meetup.com/grupy-rp/
+  logo: https://github.com/jonatasbaldin/python-community-map/raw/master/logo.png
 ```
+
+*The `logo` field is optional.*
 
 If you are adding a new country, add a comment header before the community:
 ```yaml
@@ -27,6 +30,7 @@ If you are adding a new country, add a comment header before the community:
   lat: -21.176630
   lng: -47.820840
   url: https://www.meetup.com/grupy-rp/
+  logo: https://github.com/jonatasbaldin/python-community-map/raw/master/logo.png
 ```
 
 Please, add communities and countries (if necessary) in alphabetical order.
