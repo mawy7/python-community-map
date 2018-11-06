@@ -114,6 +114,14 @@
   lat: -19.924851
   lng: -43.937731
   url: https://www.meetup.com/PyData-Belo-Horizonte/
+  
+###
+### Canada
+###
+- name: Python Toronto
+  lat: 43.653225
+  lng: -79.383186
+  url: https://www.meetup.com/pt-BR/Python-Toronto/
 
 ###
 ### Cameroon
