@@ -32,7 +32,7 @@ footer a:hover, a:active {
   text-decoration: none;
 }
 
-.logo {
+.footer-logo {
   width: 30px;
   height: 30px;
 }
@@ -86,7 +86,7 @@ footer a:hover, a:active {
     font-size: 10px;
   }
 
-  .logo {
+  .footer-logo {
     font-size: 14px;
   }
 
