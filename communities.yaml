@@ -182,6 +182,16 @@
   url: https://www.meetup.com/pythonperu/
 
 ###
+### Spain
+###
+
+- name: Python Canarias
+  lat: 28.291565
+  lng: -16.629129
+  url: https://pythoncanarias.es/
+  logo: https://github.com/pythoncanarias/docs/blob/master/logos/python-canarias/logo-python-canarias-color.png
+
+###
 ### South Africa
 ###
 - name: Cape Town Python User Group (CTPUG)
