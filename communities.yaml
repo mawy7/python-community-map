@@ -271,3 +271,8 @@
   lat: 33.027852
   lng: -96.7115229
   url: https://www.meetup.com/python4e/
+
+- name: San Diego Python User Group
+  lat: 32.824458
+  lng: -117.6695076
+  url: http://www.pythonsd.org/
